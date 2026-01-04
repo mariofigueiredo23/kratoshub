@@ -1,0 +1,157 @@
+:root {
+  --bg: #ffffff;
+  --bg-alt: #f7f8fa;
+  --primary: #111111;
+  --accent: #4f46e5;
+  --text: #444;
+  --radius: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* UTIL */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section-alt {
+  background: var(--bg-alt);
+}
+
+/* HEADER */
+.header {
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.logo span {
+  color: var(--accent);
+}
+
+.nav a {
+  margin-left: 24px;
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 500;
+}
+
+/* HERO */
+.hero {
+  padding: 120px 0;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.hero h2 span {
+  color: var(--accent);
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 32px;
+  font-size: 1.1rem;
+}
+
+/* BUTTON */
+.btn {
+  padding: 12px 28px;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.card {
+  background: #fff;
+  padding: 32px;
+  border-radius: var(--radius);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+}
+
+.card h4 {
+  margin-bottom: 12px;
+  color: var(--primary);
+}
+
+/* CTA */
+.cta {
+  padding: 80px 0;
+  text-align: center;
+  background: #111;
+  color: #fff;
+}
+
+.cta h3 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.cta p {
+  margin-bottom: 28px;
+}
+
+/* FOOTER */
+.footer {
+  padding: 40px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 2.2rem;
+  }
+
+  .nav {
+    display: none;
+  }
+}
